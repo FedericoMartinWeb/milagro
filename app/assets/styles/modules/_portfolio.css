@@ -1,0 +1,33 @@
+.portfolio{    
+    
+    &__item--wrapper{
+        text-align: center !important;
+        
+        &__section{
+            width: 100%;
+        }
+        
+        &__img{
+            margin-bottom: 1.3rem;
+            position: relative;
+            filter: grayscale(100%);
+            transition: all .4s ease-out;
+            width: 100%;
+            
+            &:hover{ 
+                filter: grayscale(0);
+                transform: scale(1.04);
+            }
+        }
+        
+        @mixin atMedium{
+            &__section{
+                width: 100%;
+            }
+            
+            &__img{
+                margin-bottom: 2.8rem;
+            }
+        }
+    }
+}
